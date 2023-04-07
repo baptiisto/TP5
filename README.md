@@ -42,5 +42,19 @@
 |   P5   |   2016                |     2            | 29
 |   P6   |   2100                | 13               | -1
 
-### Etape 3
-apres création des tests. Nous les avons  exécutés et tous les tests marchent. Nos methodes marchent
+apres création des tests. Nous les avons  exécutés et tous les tests marchent. Nos methodes marchent.
+
+**partitions d'équivalence de date constructeur**
+| Classe |           annne       |        mois      |       jour            |  Resultat attendu                  |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |    present            | present          |  present              | la date avec les parametres données|
+|   P1   |   present             | non present      |  non present          |le premier janvier avec l'année donné|
+
+| Classe |           annne       |        mois      |       jour            |  Resultat                          |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |     2017              | 2                |   5                   | channee = 2017,chmois = 2, chjour = 5|
+|   P1   |     2017              | non present      |  non present          |channée = 2017, chmois = 1, chjour= 1|
+
+
+
+
