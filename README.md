@@ -42,7 +42,7 @@
 |   P5   |   2016                |     2            | 29
 |   P6   |   2100                | 13               | -1
 
-apres création des tests. Nous les avons  exécutés et tous les tests marchent. Nos methodes marchent.
+Apres création des tests. Nous les avons  exécutés et tous les tests marchent. Nos methodes marchent.
 
 **partitions d'équivalence de date constructeur**
 | Classe |           annne       |        mois      |       jour            |  Resultat attendu                  |
@@ -55,6 +55,6 @@ apres création des tests. Nous les avons  exécutés et tous les tests marchent
 |   P0   |     2017              | 2                |   5                   | channee = 2017,chmois = 2, chjour = 5|
 |   P1   |     2017              | non present      |  non present          |channée = 2017, chmois = 1, chjour= 1|
 
-
+Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc le constructeur est opérationnel
 
 
