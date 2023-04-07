@@ -55,6 +55,20 @@ Apres création des tests. Nous les avons  exécutés et tous les tests marchent
 |   P0   |     2017              | 2                |   5                   | channee = 2017,chmois = 2, chjour = 5|
 |   P1   |     2017              | non present      |  non present          |channée = 2017, chmois = 1, chjour= 1|
 
-Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc le constructeur est opérationnel
+Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc le constructeur est opérationnel.
 
+| Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat  attendu                 |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |        2020           | différent 12     |     oui               | chmois =+1, chjour=1               |
+|   P1   |     2020              | différet 12      |  non                  | chmois = chmois, chjour= +1        |
+|   P2   |   2017                |    =12           | non                   | chmois = 12 ,chjour =+1
+|   P3   |   2016                | =12              | oui                   | channée =+1,chmois = 1,chjour +1
+
+
+| Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat                          |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |        2020           | 1                |     31                | 1/2/2020                           |
+|   P1   |     2020              | 1                |  20                   | 21/1/2020                           |
+|   P2   |   2017                |    12           | 25                     | 26/12/2020
+|   P3   |   2020                | 12              | 31                      | 1/1/2021
 
