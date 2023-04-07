@@ -35,4 +35,27 @@ class DateTest {
          assertEquals(1,d2.chMois);
          assertEquals(1,d2.chJour);
     }
+     @Test
+    void dateDuLendemain(){
+        Date d1 = new Date(31,1,2020);
+        Date d2 = new Date(20,1,2020);
+        Date d3 = new Date(25,12,2020);
+        Date d4 = new Date(31,12,2020);
+
+        assertEquals(1,d1.dateDuLendemain().chJour);
+        assertEquals(2,d1.dateDuLendemain().chMois);
+        assertEquals(2020,d1.dateDuLendemain().chAnnee);
+
+        assertEquals(21,d2.dateDuLendemain().chJour);
+        assertEquals(1,d2.dateDuLendemain().chMois);
+        assertEquals(2020,d2.dateDuLendemain().chAnnee);
+
+        assertEquals(26,d3.dateDuLendemain().chJour);
+        assertEquals(12,d3.dateDuLendemain().chMois);
+        assertEquals(2020,d3.dateDuLendemain().chAnnee);
+
+        assertEquals(1,d4.dateDuLendemain().chJour);
+        assertEquals(1,d4.dateDuLendemain().chMois);
+        assertEquals(2021,d4.dateDuLendemain().chAnnee);
+    }
 }
