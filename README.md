@@ -41,3 +41,6 @@
 |   P4   |   2016                |    4             | 30
 |   P5   |   2016                |     2            | 29
 |   P6   |   2100                | 13               | -1
+
+### Etape 3
+apres création des tests. Nous les avons  exécutés et tous les tests marchent. Nos methodes marchent
