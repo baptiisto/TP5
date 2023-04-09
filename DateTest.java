@@ -1,10 +1,13 @@
+import org.junit.jupiter.api.MethodOrderer;
+import org.junit.jupiter.api.Order;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestMethodOrder;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DateTest {
+@TestMethodOrder( MethodOrderer.OrderAnnotation.class) public class DateTest {
 
-    @Test
+    @Test @Order (2)
     void dernierJourDuMois() {
         System.out.println("Test méthode dernierJourDuMois");
         assertEquals(31,Date.dernierJourDuMois(1,2017));
@@ -16,7 +19,7 @@ class DateTest {
         assertEquals(-1,Date.dernierJourDuMois(13,2100));
     }
 
-    @Test
+    @Test @Order (1)
     void estBissextile() {
         System.out.println("Test méthode estBissextile");
         assertTrue(Date.estBissextile(2400));
@@ -26,7 +29,7 @@ class DateTest {
 
     }
 
-    @Test
+    @Test @Order (1)
     void Date(){
         System.out.println("Test méthode Date");
          Date d1 = new Date(5,2,2017);
@@ -38,7 +41,7 @@ class DateTest {
          assertEquals(1,d2.chMois);
          assertEquals(1,d2.chJour);
     }
-    @Test
+    @Test @Order (3)
     void dateDuLendemain(){
         System.out.println("Test méthode dateDuLendemain");
         Date d1 = new Date(31,1,2020);
@@ -63,7 +66,7 @@ class DateTest {
         assertEquals(2021,d4.dateDuLendemain().chAnnee);
     }
 
-    @Test
+    @Test @Order (3)
     void dateDeLaVeille() {
         System.out.println("Test méthode dateDeLaVeille");
         Date d1 = new Date(1,1,2020);
@@ -88,7 +91,7 @@ class DateTest {
         assertEquals(2020,d4.dateDeLaVeille().chAnnee);
 
     }
-    @Test
+    @Test @Order(1)
     void compareTo(){
         System.out.println("Test méthode compareTo");
         Date d1 = new Date(12,6,2020);
