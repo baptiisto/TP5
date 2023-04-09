@@ -71,10 +71,10 @@ Nous avons crées les tests et nous les avons executées. Les tests marchent. Do
 |:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
 |   P0   |        2020           | 1                |     31                | 1/2/2020                           |
 |   P1   |     2020              | 1                |  20                   | 21/1/2020                           |
-|   P2   |   2017                |    12           | 25                     | 26/12/2020
+|   P2   |   2020                |    12           | 25                     | 26/12/2020
 |   P3   |   2020                | 12              | 31                      | 1/1/2021
 
-Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc la méthode datedulendemain est opérationnel.
+Nous avons crée les tests et nous les avons executées. Les tests marchent. Donc la méthode datedulendemain est opérationnelle.
 
 **partitions d'équivalence de la méthode DateDeLaVeille**
 
@@ -93,4 +93,5 @@ Nous avons crées les tests et nous les avons executées. Les tests marchent. Do
 |   P2   |   2020                | 1                | 25                    | 24/1/2020
 |   P3   |   2020                | 2                | 25                    | 24/2/2020
 
+Nous avons crée les tests et nous les avons executées. Les tests marchent. Donc la méthode dateDeLaVeille est opérationnellle.
 
