@@ -57,6 +57,8 @@ Apres création des tests. Nous les avons  exécutés et tous les tests marchent
 
 Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc le constructeur est opérationnel.
 
+**partitions d'équivalence de la méthode DateDuLendemain**
+
 | Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat  attendu                 |
 |:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
 |   P0   |        appartient à N | différent 12     |     oui               | chmois =+1, chjour=1               |
@@ -72,6 +74,23 @@ Nous avons crées les tests et nous les avons executées. Les tests marchent. Do
 |   P2   |   2017                |    12           | 25                     | 26/12/2020
 |   P3   |   2020                | 12              | 31                      | 1/1/2021
 
-ous avons crées les tests et nous les avons executées. Les tests marchent. Donc la méthode datedulendemain est opérationnel.
+Nous avons crées les tests et nous les avons executées. Les tests marchent. Donc la méthode datedulendemain est opérationnel.
+
+**partitions d'équivalence de la méthode DateDeLaVeille**
+
+| Classe |           annne       |        mois      |jour                   |  Resultat  attendu                 |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |        appartient à N |           =1     |     =1                | chmois =12, chjour=31, annee =-1   |
+|   P1   |     appartient à N    | différet 1       |  =1                   |chmois =-1,chjour=dernierjourdumois |
+|   P2   |  appartient à N       |    =1            | différent de 1        | chmois = 1 ,chjour =-1
+|   P3   |   appartient à N      | différent de 1   | différent de 1        | chmois = chmois,chjour =-1
+
+
+| Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat                          |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |        2020           | 1                |     1                 | 31/12/2019                         |
+|   P1   |     2020              | 2                |  1                    | 31/1/2020                          |
+|   P2   |   2020                | 1                | 25                    | 24/1/2020
+|   P3   |   2020                | 2                | 25                    | 24/2/2020
 
 
