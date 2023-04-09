@@ -123,3 +123,7 @@ la date d1 est le this. La date d2 est la date qui va etre comparé avec le this
 ### Etape 3: On ajoute les prints à chaque méthode de test
 
 On remarque qu'en rajoutant un print à chaque méthode quand nous éxécutons les tests. le terminal affiche "Test méthode {nom de méthode} au lieu de ne rien afficher.
+
+### Etape 4: Choix de la maniére d'éffectuer les tests
+
+Je préfere effectuer les tests en bottom up car cette maniére permet d'identifer d'où vient exactement le probléme comparée à la méthode top_down où si une fonction ne marche pas nous ne savons pas exactement d'ou vient le probléme "Est ce que le probléme vient de de cette fonction ou de la fonction qu'elle appelle". Le bottom up semble plus précis et clair.
