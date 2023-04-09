@@ -72,3 +72,6 @@ Nous avons crées les tests et nous les avons executées. Les tests marchent. Do
 |   P2   |   2017                |    12           | 25                     | 26/12/2020
 |   P3   |   2020                | 12              | 31                      | 1/1/2021
 
+ous avons crées les tests et nous les avons executées. Les tests marchent. Donc la méthode datedulendemain est opérationnel.
+
+
