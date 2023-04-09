@@ -59,10 +59,10 @@ Nous avons crées les tests et nous les avons executées. Les tests marchent. Do
 
 | Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat  attendu                 |
 |:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
-|   P0   |        2020           | différent 12     |     oui               | chmois =+1, chjour=1               |
-|   P1   |     2020              | différet 12      |  non                  | chmois = chmois, chjour= +1        |
-|   P2   |   2017                |    =12           | non                   | chmois = 12 ,chjour =+1
-|   P3   |   2016                | =12              | oui                   | channée =+1,chmois = 1,chjour +1
+|   P0   |        appartient à N | différent 12     |     oui               | chmois =+1, chjour=1               |
+|   P1   |     appartient à N    | différet 12      |  non                  | chmois = chmois, chjour= +1        |
+|   P2   |  appartient à N       |    =12           | non                   | chmois = 12 ,chjour =+1
+|   P3   |   appartient à N      | =12              | oui                   | channée =+1,chmois = 1,chjour +1
 
 
 | Classe |           annne       |        mois      |jour=dernierjourdumois |  Resultat                          |
