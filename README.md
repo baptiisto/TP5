@@ -1,6 +1,6 @@
 # TP5
 **Ce fichier servira de compte rendu.**
-### Etape 1: ON ajoute la classe date
+### Etape 1: On ajoute la classe date
 ### Etape 2: on crée la partition d'échange avec la methode dernierjour du mois et est bissextile
 
 
@@ -120,3 +120,6 @@ la date d1 est le this. La date d2 est la date qui va etre comparé avec le this
 |   P5   |  d1 =2020  d2 =2020   |d1=6 d2=6         |     d1=12 d2=16       | -4                                 |
 |   P6   |  d1 =2020  d2 =2020   |d1=6 d2=6         |     d1=12 d2=12       | 0                                  |
 
+### Etape 3: On ajoute les prints à chaque méthode de test
+
+On remarque qu'en rajoutant un print à chaque méthode quand nous éxécutons les tests. le terminal affiche "Test méthode {nom de méthode} au lieu de ne rien afficher.
