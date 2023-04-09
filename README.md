@@ -95,3 +95,28 @@ Nous avons crée les tests et nous les avons executées. Les tests marchent. Don
 
 Nous avons crée les tests et nous les avons executées. Les tests marchent. Donc la méthode dateDeLaVeille est opérationnellle.
 
+**partitions d'équivalence de la méthode CompareTO**
+
+la date d1 est le this. La date d2 est la date qui va etre comparé avec le this.
+
+| Classe |           annne       |        mois      |jour                   |  Resultat  attendu                 |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   |     d1.annee>d2.annee |   peu importe    |     peu importe       | >0                                 |
+|   P1   |     d1.annee<d2.annee |   peu importe    |     peu importe       | <0                                 |
+|   P2   |     d1.annee=d2.annee |d1.mois>d2.mois   |     peu importe       | >0                                 |
+|   P3   |     d1.annee=d2.annee |d1.mois<d2.mois   |     peu importe       | <0                                 |
+|   P4   |     d1.annee=d2.annee |d1.mois=d2.mois   |     d1.jour>d2.jour   | >0                                 |
+|   P5   |     d1.annee=d2.annee |d1.mois=d2.mois   |     d1.jour<d2.jour   | <0                                 |
+|   P5   |     d1.annee=d2.annee |d1.mois=d2.mois   |     d1.jour=d2.jour   | =0                                 |
+
+
+| Classe |           annne       |        mois      |jour                   |  Resultat                          |
+|:------:|:---------------------:|:----------------:|:---------------------:| :---------------------------------:|
+|   P0   | d1 =2020 d2 = 2019    |   d1=6 d2=8      |     d1=12 d2=16       | 11428                              |
+|   P1   | d1 =2019 d2 = 2020    |   d1=8 d2=6      |     d1=16 d2=12       | -11428                             |
+|   P2   |  d1 =2020  d2 =2020   |d1=8 d2=6         |     d1=12 d2=16       | 228                                |
+|   P3   |  d1 =2020  d2 =2020   |d1=6 d2=8         |     d1=16 d2=12       | -228                               |
+|   P4   |  d1 =2020  d2 =2020   |d1=6 d2=6         |     d1=16 d2=12       | 4                                  |
+|   P5   |  d1 =2020  d2 =2020   |d1=6 d2=6         |     d1=12 d2=16       | -4                                 |
+|   P6   |  d1 =2020  d2 =2020   |d1=6 d2=6         |     d1=12 d2=12       | 0                                  |
+
