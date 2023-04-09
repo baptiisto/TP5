@@ -5,7 +5,8 @@ import static org.junit.jupiter.api.Assertions.*;
 class DateTest {
 
     @Test
-   void dernierJourDuMois() {
+    void dernierJourDuMois() {
+        System.out.println("Test méthode dernierJourDuMois");
         assertEquals(31,Date.dernierJourDuMois(1,2017));
         assertEquals(30,Date.dernierJourDuMois(4,2017));
         assertEquals(28,Date.dernierJourDuMois(2,2017));
@@ -15,17 +16,19 @@ class DateTest {
         assertEquals(-1,Date.dernierJourDuMois(13,2100));
     }
 
-
     @Test
     void estBissextile() {
+        System.out.println("Test méthode estBissextile");
         assertTrue(Date.estBissextile(2400));
         assertTrue(Date.estBissextile(2016));
         assertFalse(Date.estBissextile(2100));
         assertFalse(Date.estBissextile(2017));
 
     }
+
     @Test
     void Date(){
+        System.out.println("Test méthode Date");
          Date d1 = new Date(5,2,2017);
          Date d2 = new Date(2017);
          assertEquals(2017,d1.chAnnee);
@@ -35,8 +38,9 @@ class DateTest {
          assertEquals(1,d2.chMois);
          assertEquals(1,d2.chJour);
     }
-     @Test
+    @Test
     void dateDuLendemain(){
+        System.out.println("Test méthode dateDuLendemain");
         Date d1 = new Date(31,1,2020);
         Date d2 = new Date(20,1,2020);
         Date d3 = new Date(25,12,2020);
@@ -58,9 +62,10 @@ class DateTest {
         assertEquals(1,d4.dateDuLendemain().chMois);
         assertEquals(2021,d4.dateDuLendemain().chAnnee);
     }
-    
+
     @Test
     void dateDeLaVeille() {
+        System.out.println("Test méthode dateDeLaVeille");
         Date d1 = new Date(1,1,2020);
         Date d2 = new Date(1,2,2020);
         Date d3 = new Date(25,1,2020);
@@ -83,9 +88,9 @@ class DateTest {
         assertEquals(2020,d4.dateDeLaVeille().chAnnee);
 
     }
-    
     @Test
     void compareTo(){
+        System.out.println("Test méthode compareTo");
         Date d1 = new Date(12,6,2020);
         Date d2 = new Date(16,8,2019);
         Date d3 = new Date(12,8,2020);
@@ -102,4 +107,5 @@ class DateTest {
         assertEquals(0,d1.compareTo(d6));
 
     }
+
 }
