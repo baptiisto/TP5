@@ -127,3 +127,7 @@ On remarque qu'en rajoutant un print à chaque méthode quand nous éxécutons l
 ### Etape 4: Choix de la maniére d'éffectuer les tests
 
 Je préfere effectuer les tests en bottom up car cette maniére permet d'identifer d'où vient exactement le probléme comparée à la méthode top_down où si une fonction ne marche pas nous ne savons pas exactement d'ou vient le probléme "Est ce que le probléme vient de de cette fonction ou de la fonction qu'elle appelle". Le bottom up semble plus précis et clair.
+
+### Etape 5: Question sur l'ordre d'éxecution des tests
+
+Oui, Plusieurs tests peuvent avoir le même ordre car certaines méthodes n'en appellent aucune et d'autres fonctions appellent les mêmes fonctions. Donc certaines fonctions sont au même niveau. Donc elles sont éxecutées en même temps.
