@@ -130,4 +130,4 @@ Je préfere effectuer les tests en bottom up car cette maniére permet d'identif
 
 ### Etape 5: Question sur l'ordre d'éxecution des tests
 
-Oui, Plusieurs tests peuvent avoir le même ordre car certaines méthodes n'en appellent aucune et d'autres fonctions appellent les mêmes fonctions. Donc certaines fonctions sont au même niveau. Donc elles sont éxecutées en même temps.
+Oui, Plusieurs tests peuvent avoir le même ordre car certaines méthodes n'en appellent aucune et d'autres fonctions appellent les mêmes fonctions. Donc certaines fonctions sont au même niveau.Donc elles sont éxecutées en même temps.
